@@ -1,8 +1,72 @@
 body {
-   background: #00091B;
+   /* background: #00091B; */
+   background: url('img/top_background.jpg') no-repeat center center fixed;
    color: #fff;
 }
 
+.wrapper {
+   position: absolute;
+   left: 23%;
+   top: 80%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   animation: fadeIn 1000ms ease;
+   -webkit-animation: fadeIn 1000ms ease;
+}
+
+.topImage {
+   height: 100vh;
+   opacity: 20%;
+}
+
+.top_sentence_1 {
+   display: flex;
+}
+
+.league-gothic-1,
+.league-gothic-2 {
+   font-family: "League Gothic", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+   font-variation-settings:
+      "wdth" 100;
+   font-size: 5vw;
+   padding-top: 1vw;
+}
+
+.league-gothic-2 {
+   font-size: 2vw;
+}
+
+.noto-sans-jp-1 {
+   font-family: "Noto Sans JP", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 900;
+   font-style: normal;
+   font-size: 5vw;
+}
+
+@media screen and (max-width: 767px) {
+   .wrapper {
+      left: 26%;
+   }
+
+   .league-gothic-1 {
+      font-size: 10vw;
+      padding-top: 2vw;
+   }
+   .league-gothic-2 {
+      font-size: 6vw;
+   }
+   .noto-sans-jp-1 {
+      font-size: 10vw;
+   }
+   .wrapper {
+      top: 80%;
+      left: 50%;
+   }
+}
 
 @keyframes fadeIn {
    from {
@@ -30,16 +94,7 @@ body {
 
 }
 
-.wrapper {
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   -webkit-transform: translate(-50%, -50%);
-   animation: fadeIn 1000ms ease;
-   -webkit-animation: fadeIn 1000ms ease;
 
-}
 
 .announce {
    padding: 5vw;
@@ -286,6 +341,7 @@ p {
 #infographic article[data-step="16"] {
    margin-left: -102px;
 }
+
 /* BB */
 /* Positioning and styling for social links and navigation links */
 .social-links {
@@ -296,18 +352,21 @@ p {
    left: 10px;
    bottom: 10px;
 }
-   .social-links a, .navigation-links a {
-      color: #fff;
-      margin: 0 10px;
-      font-size: 2rem;
-      transition: transform 0.3s ease-in-out;
-   }
+
+.social-links a,
+.navigation-links a {
+   color: #fff;
+   margin: 0 10px;
+   font-size: 2rem;
+   transition: transform 0.3s ease-in-out;
+}
 
 .navigation-links a {
    font-size: 1.5rem;
 }
 
-.social-links a:hover, .navigation-links a:hover {
+.social-links a:hover,
+.navigation-links a:hover {
    transform: scale(1.1);
 }
 
@@ -322,14 +381,18 @@ p {
 /* Responsive adjustments */
 @media screen and (max-width: 767px) {
    .social-links a {
-       font-size: 5vw; /* Smaller icons for smaller screens */
-       margin: 0 3vw;
+      font-size: 5vw;
+      /* Smaller icons for smaller screens */
+      margin: 0 3vw;
    }
+
    .navigation-links a {
-      font-size: 4vw; /* Smaller icons for smaller screens */
-       margin: 0 3vw;
+      font-size: 4vw;
+      /* Smaller icons for smaller screens */
+      margin: 0 3vw;
    }
 }
+
 /* Style for the fixed header */
 .site-header {
    position: fixed;
@@ -337,26 +400,33 @@ p {
    height: 50px;
    top: 0;
    left: 0;
-   background: #00091B; /* Adjust the color to fit your design */
+   /* background: #00091B; */
    z-index: 1000;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds depth with a shadow */
-   display: flex; /* Using flex to align children */
-   align-items: center; /* Centers children vertically */
-   justify-content: flex-end; /* Aligns navigation links to the right */
+   display: flex;
+   /* Using flex to align children */
+   align-items: center;
+   /* Centers children vertically */
+   justify-content: flex-end;
+   /* Aligns navigation links to the right */
    flex-direction: row;
- }
+}
+
+
+
 @media screen and (max-width: 767px) {
    .site-header {
       height: 15vw;
-      justify-content: center; /* Aligns navigation links to the right */ 
+      justify-content: center;
+      /* Aligns navigation links to the right */
    }
+
    .navigation-links {
       margin-right: 0;
    }
 }
- 
 
- 
- /* Ensure rest of content does not hide
+
+
+/* Ensure rest of content does not hide
  
  

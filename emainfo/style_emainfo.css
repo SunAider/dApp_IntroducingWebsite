@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* background: url('path/to/your/background.jpg') no-repeat center center fixed; */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Muli', sans-serif;
+    color: #fff;
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%; /* Adjust height as per your content */
+}
+
+.left-panel, .right-panel {
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%; /* Adjust based on your layout needs */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    color: #fff; /* Set text color for visibility */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.left-panel {
+    flex: 0 0 75%; /* flex-grow, flex-shrink, flex-basis */
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+    background-image: url('../assets/img/Frame_red.png'); /* Replace with your image path */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.right-panel {
+    flex: 0 0 25%;
+    height: auto;
+    /* background-color: rgba(255, 255, 255, 0.5);  */
+    background-image: url('../assets/img/Frame_black.png'); 
+}
+
+.top-section {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    flex: 1 0 28%;            
+    position: relative; 
+}
+
+
+.top-section img {
+    width: 40%;
+}
+.bottom-section {
+    flex: 2.5 0 72%; /* Approximately 2.5/3.5 of the parent container */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr; /* Two rows */
+    gap: 20px; /* Spacing between grid items */
+    width: 100%;
+}
+
+.grid-item {
+    display: flex;
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+    align-items: center;
+    justify-content: center; 
+    color: #fff;
+    padding: 10px;
+}
+
+.grid-item > img {
+    width: 30%;  
+    height: auto;  
+}
+
+.grid-item p {
+    flex: 1;  
+    margin-left: 10px;  
+    font-size: 2vw; 
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+    }
+    .top-section img {
+        width: 80%;
+    }
+    .right-panel {
+        display: none;
+    }
+    .left-panel {
+        /* flex-basis: 100%; 
+        height: 50vh;  */
+        flex: 1;
+    }
+    .bottom-section {
+        grid-template-columns: 1fr; /* Stack grid items in a single column on smaller screens */
+    }
+    .grid-item {
+        flex-direction: row;  
+        align-items: center;
+        text-align: center;
+    }
+    .grid-item img {
+        width: 30%;  
+        margin-bottom: 10px;  
+    }
+    .grid-item p {
+        text-align: left;  
+        font-size: 6vw;
+    }
+    #grid-item-1 { order: 1; }
+    #grid-item-2 { order: 2; } 
+    #grid-item-3 { order: 3; }
+    #grid-item-4 { order: 4; }
+}
+
+.grid-item a {
+    display: inline-block;  /* Ensures the anchor tag surrounds the image properly */
+    cursor: pointer;       /* Changes the cursor to indicate this is a clickable link */
+ }
+ 
+ .grid-item img:hover {
+    opacity: 0.8;          /* Adds a slight visual feedback on hover */
+ }
