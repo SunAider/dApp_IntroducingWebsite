@@ -19,25 +19,28 @@
 
             <div class="bottom-section">
                 <div class="grid-item" id="grid-item-1">
-                    <a href="../assets/files/latest_PS.pdf" target="_blank">
+                    <!-- <a href="../assets/files/無題-38.png" target="_blank">
                         <img src="../assets/img/1.png" alt="Description of Image 1">
-                    </a>
+                    </a> -->
+                    <a href="../assets/files/無題-38.png" target="_blank" id="downloadLink1" >
+                        <img src="../assets/img/1.png" alt="Description of Image 1">
+                    </a>                    
                     <p>7/27終了<br>プライベートセール<br>ご案内</p>
                 </div>
                 <div class="grid-item" id="grid-item-3">
-                    <a href="../assets/files/latest_WP.pdf" target="_blank">
+                    <a href="../assets/files/無題-39.png" target="_blank" id="downloadLink3">
                         <img src="../assets/img/3.png" alt="Description of Image 3">
                     </a>
                     <p>Our <br>White Paper</p>
                 </div>
                 <div class="grid-item" id="grid-item-2">
-                    <a href="../assets/files/latest_詳細情報.pdf" target="_blank">
+                    <a href="../assets/files/無題-40.png" target="_blank" id="downloadLink2">
                         <img src="../assets/img/2.png" alt="Description of Image 2">
                     </a>
                     <p>EMA追加詳細情報</p>
                 </div>
                 <div class="grid-item" id="grid-item-4">
-                    <a href="../assets/files/latest_ロードマップ.pdf" target="_blank">
+                    <a href="../assets/files/無題-41.png" target="_blank" id="downloadLink4">
                         <img src="../assets/img/4.png" alt="Description of Image 4">
                     </a>
                     <p>Our<br> Road Map</p>
@@ -52,5 +55,31 @@
         </div>
     </div>
 </body>
+<script>
+    function updateHref() {
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var downloadLink1 = document.getElementById('downloadLink1');
+        var downloadLink2 = document.getElementById('downloadLink2');
+        var downloadLink3 = document.getElementById('downloadLink3');
+        var downloadLink4 = document.getElementById('downloadLink4');
+        if (screenWidth <= 768) {
+            // Set href for mobile devices
+            downloadLink1.href = '../assets/files/mobile-無題-38.png';
+            downloadLink2.href = '../assets/files/mobile-無題-39.png';
+            downloadLink3.href = '../assets/files/mobile-無題-40.png';
+            downloadLink4.href = '../assets/files/mobile-無題-41.png';
+        } else {
+            // Set href for desktop
+            downloadLink1.href = '../assets/files/無題-38.png';
+            downloadLink2.href = '../assets/files/無題-39.png';
+            downloadLink3.href = '../assets/files/無題-40.png';
+            downloadLink4.href = '../assets/files/無題-41.png';
+        }
+    }
+
+    // Run the function on page load and window resize
+    window.addEventListener('resize', updateHref);
+    document.addEventListener('DOMContentLoaded', updateHref);
+</script>
 
 </html>
