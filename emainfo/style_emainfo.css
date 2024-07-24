@@ -92,7 +92,7 @@ body {
 
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
         margin: auto;
     }
@@ -100,7 +100,7 @@ body {
         width: 80%;
     }
     .right-panel {
-        display: none;
+        /* display: none; */
     }
     .left-panel {
         /* flex-basis: 100%; 
@@ -118,10 +118,12 @@ body {
     .grid-item img {
         width: 30%;  
         margin-bottom: 10px;  
+        margin-left: -10vw;
     }
     .grid-item p {
         text-align: left;  
         font-size: 6vw;
+        margin-left: 0px;
     }
     #grid-item-1 { order: 1; }
     #grid-item-2 { order: 2; } 
