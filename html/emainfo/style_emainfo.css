@@ -51,7 +51,6 @@ body {
     display: flex;
     justify-content: center;  
     align-items: center;      
-    flex: 1 0 28%;            
     position: relative; 
 }
 
@@ -85,22 +84,35 @@ body {
 
 .grid-item p {
     flex: 1;  
+    margin: auto;
     margin-left: 10px;  
     font-size: 2vw; 
     font-weight: bold;
+    color: white;
 }
 
+.grid-item a {
+    display: inline-block;  /* Ensures the anchor tag surrounds the image properly */
+    cursor: pointer;       /* Changes the cursor to indicate this is a clickable link */
+    display: flex;
+    text-decoration: none;
+ }
+ 
+ .grid-item img:hover {
+    opacity: 0.8;          /* Adds a slight visual feedback on hover */
+ }
+
 @media (max-width: 768px) {
+    .left-panel, .right-panel{
+        padding: 3vw;
+    }
     .container {
         flex-direction: row;
-        height: auto;
+        height: 100vh;
         margin: auto;
     }
     .top-section img {
         width: 80%;
-    }
-    .right-panel {
-        /* display: none; */
     }
     .left-panel {
         /* flex-basis: 100%; 
@@ -109,21 +121,23 @@ body {
     }
     .bottom-section {
         grid-template-columns: 1fr; /* Stack grid items in a single column on smaller screens */
+        gap: 2vw;
     }
     .grid-item {
         flex-direction: row;  
         align-items: center;
-        text-align: center;
+        justify-content: flex-start;
+        padding: 2vw;
     }
     .grid-item img {
-        width: 30%;  
+        height: 14vh;
         margin-bottom: 10px;  
-        margin-left: -10vw;
+        margin-left: -2vw;
     }
     .grid-item p {
         text-align: left;  
-        font-size: 6vw;
-        margin-left: 0px;
+        font-size: 4.7vw;
+        margin-left: 3vw;
     }
     #grid-item-1 { order: 1; }
     #grid-item-2 { order: 2; } 
@@ -131,11 +145,3 @@ body {
     #grid-item-4 { order: 4; }
 }
 
-.grid-item a {
-    display: inline-block;  /* Ensures the anchor tag surrounds the image properly */
-    cursor: pointer;       /* Changes the cursor to indicate this is a clickable link */
- }
- 
- .grid-item img:hover {
-    opacity: 0.8;          /* Adds a slight visual feedback on hover */
- }
