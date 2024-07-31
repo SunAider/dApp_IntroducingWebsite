@@ -1,26 +1,44 @@
 body {
    /* background: #00091B; */
-   background: url('img/top_background.jpg') no-repeat center center fixed;
+   background: url('img/ema_top_top2/top-pc-bg.png') no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 0;
+   margin: 0;
    color: #fff;
+   height: 100vh;
 }
 
+@media screen and (max-width: 767px) {
+   body {
+      background: url('img/ema_top_top2/top-sp-bg.png') no-repeat;
+      background-size: cover;
+      background-position: center;
+      }
+}
 .wrapper {
    position: absolute;
-   left: 23%;
-   top: 80%;
-   transform: translate(-50%, -50%);
-   -webkit-transform: translate(-50%, -50%);
-   animation: fadeIn 1000ms ease;
-   -webkit-animation: fadeIn 1000ms ease;
+   left: 95px;
+   bottom: 20px;
 }
 
 .topImage {
+   width: auto;
    height: 100vh;
    opacity: 20%;
 }
-
-.top_sentence_1 {
-   display: flex;
+@media screen and (max-width: 767px) {
+   .topImage {
+      height: auto;
+      width: 100%;
+      opacity: 20%;
+      margin-bottom: 5vh;
+      
+   }
 }
 
 .league-gothic-1,
@@ -35,8 +53,13 @@ body {
    padding-top: 1vw;
 }
 
+.top_sentence_1 {
+   display: flex;
+}
+
 .league-gothic-2 {
    font-size: 2vw;
+   padding-top: 0;
 }
 
 .noto-sans-jp-1 {
@@ -48,24 +71,32 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-   .wrapper {
-      left: 26%;
-   }
-
    .league-gothic-1 {
       font-size: 10vw;
       padding-top: 2vw;
    }
-   .league-gothic-2 {
-      font-size: 6vw;
-   }
    .noto-sans-jp-1 {
       font-size: 10vw;
+      letter-spacing: 0.05em;
    }
    .wrapper {
-      top: 80%;
-      left: 50%;
+      position: absolute;
+      left: unset;
+      width: 100%;
+      height: auto;
+      bottom: 7vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
    }
+   .top_sentence_2{
+      margin: 0 1vw;
+      font-size: 4.2vw;
+      text-align: center;
+   }
+
 }
 
 @keyframes fadeIn {
@@ -344,13 +375,17 @@ p {
 
 /* BB */
 /* Positioning and styling for social links and navigation links */
-.social-links {
+
+.social-links .button01{
    position: fixed;
-   display: flex;
-   align-items: center;
-   z-index: 1000;
-   left: 10px;
+   left: 15px;
    bottom: 10px;
+}
+
+.social-links .button02{
+   position: fixed;
+   right: 15px;
+   top: 10px;
 }
 
 .social-links a,
@@ -380,6 +415,32 @@ p {
 
 /* Responsive adjustments */
 @media screen and (max-width: 767px) {
+   .social-links{
+      position: fixed;
+      display: flex;
+      align-items: center;
+      z-index: 1000;
+      left: 10px;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   .social-links .button01{
+      position: unset;
+      left: unset;
+      bottom: unset;
+   }
+   
+   .social-links .button02{
+      position: unset;
+      right: unset;
+      top: unset;
+   }
+
    .social-links a {
       font-size: 5vw;
       /* Smaller icons for smaller screens */
@@ -391,6 +452,9 @@ p {
       /* Smaller icons for smaller screens */
       margin: 0 3vw;
    }
+
+
+   
 }
 
 /* Style for the fixed header */
