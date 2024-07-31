@@ -525,7 +525,7 @@ p {
       align-items: center;
       z-index: 1000;
       left: 10px;
-      top: 1.5vh;
+      bottom: 1vh;
       left: 0;
       width: 100%;
       display: flex;
