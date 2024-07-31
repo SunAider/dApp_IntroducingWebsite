@@ -11,21 +11,31 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
 </head>
 
 <body class="page2_body">
   <!-- <img src="assets/img/ema_top_top2/girl_italic_pc.png" class="topImage" id="imgGirl" alt="Descriptive Text for the Image"> -->
-  <div class="wrapper">
-    <div class="top_sentence_1">
-      <div class="league-gothic-1">EMADATA&nbsp;&nbsp;</div>
-      <div class="noto-sans-jp-1">PROTOCOL</div>
+  <div class="page2_wrapper">
+    <div class="page2_wrapper_child1">
+      <a href="https://bookmaker.ninja/" target="_blank" class="link"><img src="assets/img/ema_top_top2/clickhere_btn.png" id="imgClickHere" alt=""></a>
+      <div class="top_sentence_1">
+        <div class="league-gothic-1 decenBookmaker_font page2_top_sentence_1" style="">Decentralized Bookmaker</div>
+        <!-- <div class="noto-sans-jp-1">PROTOCOL</div> -->
+      </div>
+      <div class="top_sentence_2 league-gothic-2 bookmakerUrl_font page2_top_sentence_2">
+        https://bookmaker.ninja
+      </div>
+
     </div>
-    <div class="top_sentence_2 league-gothic-2">
-      Build a UI based on predictive data and integrate it with a decentralized protocol
+    <div class="page2_cat">
+      <a href="#" target="_blank" class="link"><img src="assets/img/ema_top_top2/about_ema_btn.png" alt=""></a>
+      <a href="#" target="_blank" class="link"><img src="assets/img/ema_top_top2/bookmaker-btn.png" alt=""></a>
+      <a href="#" target="_blank" class="link"><img src="assets/img/ema_top_top2/whitepaper-btn.png" alt=""></a>
+      <a href="#" target="_blank" class="link"><img src="assets/img/ema_top_top2/decentralize-btn.png" alt=""></a>
     </div>
 
   </div>
@@ -35,38 +45,42 @@
     <a href="https://t.me/yourchannel"><i class="fa fa-telegram"></i></a>
   </div> -->
 
-  <div class="social-links">
-    <a class="button01" href="https://github.com/topshinjiron/EMA"><img src="assets/img/ema_top_top2/icon_github_pc.png" id="btnGit" alt="Descriptive Text for the Image"></i></a>
-    <a class="button02" href="/"><img src="assets/img/ema_top_top2/icon_JoinUs_pc.png" id="btnJoinUs" alt="Descriptive Text for the Image"></i></a>
+  <div class="page2_social-links">
+
+    <a class="button01" href="https://discord.gg/bookmaker"><img src="assets/img/ema_top_top2/icon_discord.png"
+        alt="Descriptive Text for the Image"></i></a>
+    <a class="button01" href="https://twitter.com/EMA_DPMs"><img src="assets/img/ema_top_top2/icon_x.png"
+        alt="Descriptive Text for the Image"></i></a>
+    <a class="button01" href="https://t.me/bookmakerninja"><img src="assets/img/ema_top_top2/icon_telegram.png"
+        id="btnJoinUs" alt="Descriptive Text for the Image"></i></a>
+    <div class="iconHome">
+      <a class="" href="/"><img src="assets/img/ema_top_top2/icon_home.png" id="btnJoinUs"
+          alt="Descriptive Text for the Image"></i></a>
+    </div>
 
   </div>
 
 </body>
 
 <script>
-  function updateHref() {
-        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        var btnGitLink = document.getElementById('btnGit');
-        var btnJoinUsLink = document.getElementById('btnJoinUs');
-        var imgGirlLink = document.getElementById('imgGirl');
-        // var downloadLink3 = document.getElementById('downloadLink3');
-        // var downloadLink4 = document.getElementById('downloadLink4');
-        if (screenWidth <= 768) {
-            // Set href for mobile devices
-            btnGitLink.src = 'assets/img/ema_top_top2/icon_github_sp.png';
-            btnJoinUsLink.src = 'assets/img/ema_top_top2/icon_JoinUs_sp.png';
-            imgGirlLink.src = 'assets/img/ema_top_top2/girl_italic_sp.png';
-        } else {
-            // Set href for desktop
-            btnGitLink.src = 'assets/img/ema_top_top2/icon_github_pc.png';
-            btnJoinUsLink.src = 'assets/img/ema_top_top2/icon_JoinUs_pc.png';
-            imgGirlLink.src = 'assets/img/ema_top_top2/girl_italic_pc.png';
-        }
-    }
+  // function updateHref() {
+  //   var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  //   var btnGitLink = document.getElementById('btnGit');
+  //   var btnJoinUsLink = document.getElementById('btnJoinUs');
+  //   var imgGirlLink = document.getElementById('imgGirl');
+  //   if (screenWidth <= 768) {
+  //     btnGitLink.src = 'assets/img/ema_top_top2/icon_github_sp.png';
+  //     btnJoinUsLink.src = 'assets/img/ema_top_top2/icon_JoinUs_sp.png';
+  //     imgGirlLink.src = 'assets/img/ema_top_top2/girl_italic_sp.png';
+  //   } else {
+  //     btnGitLink.src = 'assets/img/ema_top_top2/icon_github_pc.png';
+  //     btnJoinUsLink.src = 'assets/img/ema_top_top2/icon_JoinUs_pc.png';
+  //     imgGirlLink.src = 'assets/img/ema_top_top2/girl_italic_pc.png';
+  //   }
+  // }
 
-    // Run the function on page load and window resize
-    window.addEventListener('resize', updateHref);
-    document.addEventListener('DOMContentLoaded', updateHref);
+  // window.addEventListener('resize', updateHref);
+  // document.addEventListener('DOMContentLoaded', updateHref);
 </script>
 
 </html>
