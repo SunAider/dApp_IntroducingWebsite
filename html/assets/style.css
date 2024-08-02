@@ -1,6 +1,6 @@
 body {
    /* background: #00091B; */
-   background: url('img/ema_top_top2/top-pc-bg.png') no-repeat;
+   background: url('img/ema_top_top2/top_bg_pc.png') no-repeat;
    background-size: cover;
    background-position: center;
    display: flex;
@@ -20,15 +20,15 @@ body {
       background: url('img/ema_top_top2/top-sp-bg.png') no-repeat;
       background-size: cover;
       background-position: center;
-      }
+   }
 }
 
-/* Page 2 */
-.page2_body{
+/* ----------------------------- Page 2 ------------------------------------ */
+
+.page2_body {
    /* background: #00091B; */
-   background: url('img/ema_top_top2/page2_pc_bg.png') no-repeat;
+   background: url('img/ema_top_top2/page2_bg_pc.png') no-repeat;
    background-size: cover;
-   background-position: center;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -39,15 +39,77 @@ body {
    height: 100vh;
 }
 
-#imgClickHere {
-
+.page2_wrapper {
+   position: absolute;
+   width: 100%;
+   height: 75vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
 }
+
+.page2_wrapper_child1 {
+   /* display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center; */
+}
+
+.page2_wrapper_child2 {
+   width: 75vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.page2_wrapper_child3 {
+   margin-top: -10vh;
+}
+
+.page2_cat {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+.page2_cat .link img {
+   width: 35vh;
+}
+
+.page2_social-links {
+   position: fixed;
+   display: flex;
+   align-items: flex-start;
+   z-index: 1000;
+   left: 1vw;
+   top: 1vh;
+   width: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
+.iconHome {
+   position: absolute;
+   right: 2vw;
+   top: 1vh;
+}
+
+.ninja_click{
+   width: fit-content;
+}
+
 @media screen and (max-width: 767px) {
    .page2_body {
       background: url('img/ema_top_top2/page2_sp_bg.png') no-repeat;
       background-size: cover;
       background-position: unset;
-      }
+   }
+
    .page2_wrapper {
       position: absolute;
       top: 92vw;
@@ -59,30 +121,38 @@ body {
       align-items: center;
       justify-content: space-between;
    }
+
    .page2_wrapper_child1 {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
    }
+
    #imgClickHere {
-      width: 50vw;
+      width: 50vw !important;
    }
+
    .decenBookmaker_font {
-      color: red !important; 
+      color: red !important;
       font-size: 12vw !important;
    }
-   .bookmakerUrl_font{
+
+   .bookmakerUrl_font {
       font-size: 13vw !important;
       font-style: italic !important;
    }
-   .page2_top_sentence_1 {
-      margin-top: -3vw !important;
-   }
-   .page2_top_sentence_2 {
-      margin-top: -3vw !important;
 
+   .page2_top_sentence_1 {
+      display: block !important;
+      margin-top: -3vw !important;
    }
+
+   .page2_top_sentence_2 {
+      display: block !important;
+      margin-top: -3vw !important;
+   }
+
    .page2_cat {
       display: flex;
       flex-direction: column;
@@ -90,13 +160,16 @@ body {
       justify-content: center;
       width: 100%;
    }
-   .page2_cat .link{
-      margin-bottom: 3vw;
+
+   .page2_cat .link {
+      margin-bottom: 5vw;
    }
-   .page2_cat .link img{
+
+   .page2_cat .link img {
       width: 37vh;
    }
-   .page2_social-links{
+
+   .page2_social-links {
       position: fixed;
       display: flex;
       align-items: center;
@@ -109,20 +182,43 @@ body {
       flex-direction: row;
       justify-content: flex-start;
    }
+
    .page2_social-links img {
       width: 10vw;
    }
+
    .iconHome {
       position: absolute;
       right: 5vw;
+      top: unset;
    }
 }
-/* Page 2 end */
+
+/* ----------------------------- Page 2 end ------------------------------------ */
 
 
 
+/* ----------------------------- Page 2 subpages ------------------------------------ */
+.page2_subpages_body {
+   background-image: none;
+}
 
+.page2_subpages_img {
+   height: 100vh;
+   width: 100%;
+   overflow: auto;
+}
 
+.page2_subpages_iconHome {
+   position: fixed;
+   top: 10px;
+   right: 10px;
+}
+
+.page2_subpages_iconHome a img {
+}
+
+/* ----------------------------- Page 2 subpages end ------------------------------------ */
 
 .wrapper {
    position: absolute;
@@ -135,13 +231,14 @@ body {
    height: 100vh;
    opacity: 20%;
 }
+
 @media screen and (max-width: 767px) {
    .topImage {
       height: auto;
       width: 100%;
       opacity: 20%;
       margin-bottom: 5vh;
-      
+
    }
 }
 
@@ -179,10 +276,12 @@ body {
       font-size: 10vw;
       padding-top: 2vw;
    }
+
    .noto-sans-jp-1 {
       font-size: 10vw;
       letter-spacing: 0.05em;
    }
+
    .wrapper {
       position: absolute;
       left: unset;
@@ -195,7 +294,8 @@ body {
       justify-content: center;
       flex-wrap: wrap;
    }
-   .top_sentence_2{
+
+   .top_sentence_2 {
       margin: 0 1vw;
       font-size: 4.2vw;
       text-align: center;
@@ -480,13 +580,13 @@ p {
 /* BB */
 /* Positioning and styling for social links and navigation links */
 
-.social-links .button01{
+.social-links .button01 {
    position: fixed;
    left: 15px;
    bottom: 10px;
 }
 
-.social-links .button02{
+.social-links .button02 {
    position: fixed;
    right: 15px;
    top: 10px;
@@ -519,7 +619,7 @@ p {
 
 /* Responsive adjustments */
 @media screen and (max-width: 767px) {
-   .social-links{
+   .social-links {
       position: fixed;
       display: flex;
       align-items: center;
@@ -533,13 +633,13 @@ p {
       justify-content: space-between;
    }
 
-   .social-links .button01{
+   .social-links .button01 {
       position: unset;
       left: unset;
       bottom: unset;
    }
-   
-   .social-links .button02{
+
+   .social-links .button02 {
       position: unset;
       right: unset;
       top: unset;
@@ -557,8 +657,8 @@ p {
       margin: 0 3vw;
    }
 
-   
-   
+
+
 }
 
 /* Style for the fixed header */
