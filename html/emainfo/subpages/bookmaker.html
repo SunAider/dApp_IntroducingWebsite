@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMADATA - Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">
+  <link href="../../assets/style.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+</head>
+
+<body class="page2_subpages_body">
+
+  <img src="../../assets/img/ema_top_top2/page2_bg_pc.png" id="subpage" class="page2_subpages_img" alt="" usemap="#bookmakerMap" width="1200"
+    height="675">
+  <map name="bookmakerMap">
+    <area shape="rect" coords="642,239,766,255" href="https://bookmaker.ninja">
+    <area shape="rect" coords="19,255,172,272" href="https://bookmaker.ninja">
+  </map>
+  <!-- <div class="paragraph" style="color:black">
+
+    <p>
+      What is bookmaker.NINJA? An on-chain sports betting platform.
+
+      bookmaker.NINJA's core mission is to enable users to bet in a safe and trustless way, without KYC requirements and
+      without relying on a central authority. Your funds are your funds. Always. While traditional bookmakers (bet365,
+      WilliamHill, Draftkings, Stake, etc.) require you to deposit funds to bet, https://bookmaker.ninja testnet
+      https://bookmaker-test.ninja/ No deposit is required at all. When you place a bet, your money goes directly from
+      your wallet to a smart contract on the blockchain where the outcome is pre-determined. Once the game/event is over, the
+      contract allows you to claim your winnings (if you won).
+
+
+      Why bookmaker.NINJA?
+      1.NINJA betting is different
+      bookmaker.NINJA cannot seize your money or decide if and when you receive your winnings. bookmaker.NINJA has no
+      access to it. There are no deposits or withdrawals, and no balances are left on bookmaker.NINJA. Everything is
+      decided programmatically, completely on-chain, by smart contracts. Your money -your bets. Always.
+
+      2. NINJA bets are anonymous
+      There is no need to create an account, log in, or send documents for verification. All you need is cryptocurrency
+      and a Web3 wallet like Metamask. If you are new to cryptocurrency, the technical part may seem difficult, but once
+      you understand it, it is very easy.
+
+      3. J betting is rewarding
+      NINJA will be running promotions every week. There are plenty of chances to win free bets and NFTs (and more).
+
+      4. Betting is fun
+      But be sure to stop when it stops being fun.
+
+      P S. In this way, bookmaker.ninja is destroying the concept of gambling from the ground upvaluing soundness,
+      transparency, and usability, and aiming to be a bookmaker that everyone who uses it can truly enjoy. Please look
+      forward to NINJA, which will be released by EM AD ATA SOOR.</p>
+  </div> -->
+  <div class="page2_subpages_iconHome">
+    <a class="" href="/"><img src="../../assets/img/ema_top_top2/icon_home.png" id="btnHome"
+        alt="Descriptive Text for the Image" class="page2_subpages_iconHome_img"></i></a>
+  </div>
+</body>
+<script>
+  function updateHref() {
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var subLink = document.getElementById('subpage');
+    if (screenWidth <= 768) {
+      subLink.src = '../../assets/img/ema_top_top2/page2_bookmaker_sp.png';
+    } else {
+      subLink.src = '../../assets/img/ema_top_top2/page2_bookmaker_pc.png';
+    }
+  }
+
+  window.addEventListener('resize', updateHref);
+  document.addEventListener('DOMContentLoaded', updateHref);
+</script>
+
+</html>
