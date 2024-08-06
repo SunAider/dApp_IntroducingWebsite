@@ -10,6 +10,7 @@ body {
    height: auto;
    min-height: 100vh;
    width: 100vw;
+   overflow-x: hidden;
 }
 
 .page2_subpages_img {
@@ -19,9 +20,14 @@ body {
 }
 
 .page2_subpages_iconHome {
+   height: 13vw;
    position: fixed;
    top: 5px;
    right: 2px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .AboutEma_pc {
@@ -38,7 +44,8 @@ body {
 }
 
 .info {
-   width: 20vw;
+   min-width: 20vw;
+   width: auto;
    height: 100vh;
    display: flex;
    flex-direction: column;
@@ -61,6 +68,7 @@ body {
    height: auto;
    min-height: 90vh;
    padding-right: 2vw;
+   padding-left: 2vw;
    /* padding-bottom: 2vw;  */
    display: flex;
    flex-direction: column;
@@ -86,6 +94,16 @@ body {
 }
 
 
+.radio_label {
+   color: red !important;
+}
+input[type="radio"] {
+   accent-color: red; /* Sets the color of the radio button in modern browsers */
+}
+#btnBack {
+   width: 5vh;
+   opacity: 0.47;
+}
 
 .AboutEma_sp {
    display: none;
@@ -96,7 +114,10 @@ body {
    .page2_subpages_iconHome_img {
       width: 80%;
    }
-
+   .page2_subpages_iconHome {
+      width: 100vw;
+      flex-direction: row;
+   }
    .AboutEma_pc {
       display: none;
    }
@@ -112,6 +133,7 @@ body {
       justify-content: center;
       align-items: center;
       /* opacity: 0.5; */
+      overflow-x: hidden;
    }
 
    .info {
@@ -119,12 +141,13 @@ body {
       height: auto;
       min-height: 20vh;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-around;
       align-items: stretch;
       margin-top: 3vh;
       font-weight: bold;
       color: white;
+      padding-left: unset;
    }
 
    .color a {
@@ -134,8 +157,10 @@ body {
    .section {
       background-color: black;
       border-radius: 6vw;
-      width: 45vw;
+      width: 90vw;
       opacity: 0.46;
+      margin: auto;
+      margin-bottom: 2vh;
    }
    
    .sentences {
@@ -143,6 +168,7 @@ body {
       height: unset;
       min-height: unset;
       padding-right: unset;
+      padding-left: unset;
       color: black;
       display: flex;
       flex-direction: column;
@@ -153,6 +179,7 @@ body {
 
    .crypto-details {
       list-style-type: disc;
+      line-height: 3.5vh;
       padding-inline-start: 20px;
       overflow-wrap: break-word;
    }
@@ -166,9 +193,11 @@ body {
       padding-top: 2vh;
    }
 
-   .feature {
-      display: flex;
-
+   .features {
+      /* overflow-wrap: break-word; */
+      text-wrap: wrap;
+      padding-left:2vw;
+      padding-right:2vw;
    }
 
    .pRed {
@@ -176,6 +205,7 @@ body {
       text-align: justify;
       padding-left: 4vw;
       padding-right: 4vw;
+      padding-top: 3vh;
       font-size: unset;
    }
    
@@ -183,7 +213,11 @@ body {
       display: flex;
       float: left;
    }
-
+   #btnBack {
+      width: 9vw;
+      opacity: 0.47;
+      padding-left: 3vw;
+   }
 }
 
 /* ----------------------------- Page 2 subpages end ------------------------------------ */
