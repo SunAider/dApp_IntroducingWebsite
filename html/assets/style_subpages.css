@@ -479,6 +479,9 @@ input[type="radio"] {
 .whitepaper_main h3{
    font-size: 3vw;
 }
+.timeLine_br {
+   display: none;
+}
 @media screen and (max-width: 767px) {
    .whitepaper_header ol, .whitepaper_main ol {
       list-style-type: none;
