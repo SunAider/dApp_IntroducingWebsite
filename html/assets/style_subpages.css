@@ -490,7 +490,7 @@ input[type="radio"] {
    }
    .timeline { 
       width: 85vw;
-      font-size: 3.5vw;
+      font-size: 2vh;
       padding: 2vh;
       color: red;
    }
