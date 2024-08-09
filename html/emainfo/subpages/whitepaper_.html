@@ -17,9 +17,27 @@
   <link href="../../assets/style.css" rel="stylesheet">
 </head>
 
-<body class="comingsoon_body">
-  <img src="../../assets/img/ema_top_top2/coming Soon.png" class="comingsoonImg" id="imgGirl"
+<body class="page2_subpages_body">
+  <img src="../../assets/img/ema_top_top2/page2_white_pc.png" class="page2_subpages_img" id="subpage"
     alt="Descriptive Text for the Image">
+  <div class="page2_subpages_iconHome">
+    <a class="" href="/"><img src="../../assets/img/ema_top_top2/icon_home.png" id="btnHome"
+        alt="Descriptive Text for the Image" class="page2_subpages_iconHome_img"></i></a>
+  </div>
 </body>
+<script>
+  function updateHref() {
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var subLink = document.getElementById('subpage');
+    if (screenWidth <= 768) {
+      subLink.src = '../../assets/img/ema_top_top2/page2_white_sp.png';
+    } else {
+      subLink.src = '../../assets/img/ema_top_top2/page2_white_pc.png';
+    }
+  }
+
+  window.addEventListener('resize', updateHref);
+  document.addEventListener('DOMContentLoaded', updateHref);
+</script>
 
 </html>

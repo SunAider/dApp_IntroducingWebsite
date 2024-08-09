@@ -211,7 +211,7 @@ body {
    }
 
    .iconHome {
-      position: absolute;
+      position: fixed;
       right: 5vw;
       /* top: unset; */
    }
@@ -250,6 +250,9 @@ body {
    display: none;
 }
 
+.btnHome {
+   width: 3.9vw;
+}
 @media screen and (max-width: 767px) {
 
    .page2_subpages_iconHome_img {
@@ -324,6 +327,9 @@ body {
    .sentences_last_part {
       display: flex;
       float: left;
+   }
+   .btnHome {
+      width: 11vw;
    }
 
 }

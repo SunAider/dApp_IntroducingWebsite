@@ -97,12 +97,19 @@ body {
 .radio_label {
    color: red !important;
 }
+
 input[type="radio"] {
-   accent-color: red; /* Sets the color of the radio button in modern browsers */
+   accent-color: red;
+   /* Sets the color of the radio button in modern browsers */
 }
+
 #btnBack {
-   width: 5vh;
+   width: 3.1vw;
    opacity: 0.47;
+}
+
+#btnHome {
+   width: 3.9vw;
 }
 
 .AboutEma_sp {
@@ -114,10 +121,12 @@ input[type="radio"] {
    .page2_subpages_iconHome_img {
       width: 80%;
    }
+
    .page2_subpages_iconHome {
       width: 100vw;
-      flex-direction: row;
+      flex-direction: row !important;
    }
+
    .AboutEma_pc {
       display: none;
    }
@@ -162,7 +171,7 @@ input[type="radio"] {
       margin: auto;
       margin-bottom: 2vh;
    }
-   
+
    .sentences {
       width: unset;
       height: unset;
@@ -196,8 +205,8 @@ input[type="radio"] {
    .features {
       /* overflow-wrap: break-word; */
       text-wrap: wrap;
-      padding-left:2vw;
-      padding-right:2vw;
+      padding-left: 2vw;
+      padding-right: 2vw;
    }
 
    .pRed {
@@ -208,16 +217,287 @@ input[type="radio"] {
       padding-top: 3vh;
       font-size: unset;
    }
-   
+
    .sentences_last_part {
       display: flex;
       float: left;
    }
+
    #btnBack {
       width: 9vw;
       opacity: 0.47;
       padding-left: 3vw;
    }
+
+   #btnHome {
+      width: 11vw;
+   }
 }
 
 /* ----------------------------- Page 2 subpages end ------------------------------------ */
+
+/* ----------------------------- bookmaker -----------------------------  */
+.bookmaker_div {
+   display: block;
+   background: url('../assets/img/ema_top_top2/bg_pattern_sp.jpg') repeat;
+   width: 100vw;
+   height: auto;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.bookmaker_header {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.bookmaker_main {
+   width: 95%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.bookmaker_main_1 {
+   width: 63vw;
+   height: auto;
+   color: black;
+   text-align: justify;
+   margin-bottom: 10vh;
+}
+
+.bookmaker_main_1>h2 {
+   color: red;
+}
+
+.bookmaker_main_1 p {
+   text-align: justify;
+   font-weight: bold;
+   margin: 0;
+}
+
+.bookmaker_main_1 ol {
+   color: red;
+   list-style-type: none;
+   margin-inline-start: -40px;
+}
+
+.bookmaker_main_1 ol li::marker {
+   /* content: counter(list-counter) "."; */
+   font-size: 2.5vh;
+   /* Adjust the size as needed */
+   font-weight: bold;
+   color: red;
+   margin-right: 10px;
+   vertical-align: middle;
+
+}
+
+.bookmaker_main_1 strong {
+   font-size: x-large;
+}
+
+.bookmaker_main_1 ol li p {
+   text-align: justify;
+   margin-left: 0px;
+}
+
+.bookmaker_main_1 p {
+   color: black;
+}
+
+.bookmaker_main_2 {
+   display: block;
+   width: 30vw;
+   height: auto;
+   min-height: 70vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   position: relative;
+}
+
+.bookmaker_main_2_sp {
+   display: none;
+}
+.bookmaker_main_2>.comingsoon {
+   width: 5vw;
+   position: absolute;
+   top: -5vw;
+   left: 10vw;
+}
+
+.bookmaker_main_2>.url {
+   width: 30vw;
+}
+
+.bookmaker_main_2>.ninja {
+   width: 15vw;
+}
+
+.bookmaker_main_2 .partner {
+   width: 19vw;
+}
+
+@media screen and (max-width: 767px) {
+   .bookmaker_header > h2 {
+      color: black !important;
+   }
+   .bookmaker_main {
+      flex-direction: column;
+   }
+   .bookmaker_header h2 {
+      font-size: 14vw !important;
+   }
+   .bookmaker_main_1 {
+      width: 92vw;
+      margin-bottom: 2vh;
+   }
+   .bookmaker_main_1 > h2 {
+      text-align: center;
+      font-weight: bold;
+   }
+   .bookmaker_main_1 >h2 > br {
+      display: block !important;
+   }
+   .bookmaker_main_1 strong {
+      font-size: large;
+   }
+   
+   .bookmaker_main_1 ol li {
+      text-align: center;
+      margin-bottom: 2vh;
+   }
+   .bookmaker_main_1 ol li p{
+      text-align: center;
+   }
+   .bookmaker_main_1 p {
+      text-align: center;
+      font-weight: bold;
+      margin: 0;
+  }
+  .bookmaker_main_2 {
+   display: none;
+  }
+  .bookmaker_main_2_sp {
+   display: block;
+   width: 95vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+  }
+  .part1 img{
+   width: 20vw;
+  }
+  .part2 {
+   width: 70vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 75vw;
+  }
+  .part2 img {
+   margin: 0;
+   padding:0;
+
+  }
+  .part2_1 img{
+   width: 70vw;
+  }
+
+  .part2_2 {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+  }
+  .part2_2_2 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+  .bookmaker_main_2 .url {
+
+  }
+   
+}
+/* ----------------------------- bookmaker end -----------------------------  */
+
+.whitepaper_div {
+   display: block;
+   background: url('../assets/img/ema_top_top2/bg_pattern_sp.jpg') repeat;
+   width: 100vw;
+   height: auto;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.whitepaper_header, .whitepaper_main {
+   color: black;
+}
+
+.whitepaper_header ol, .whitepaper_main ol {
+   list-style-type: none;
+   /* margin-inline-start: -40px; */
+}
+.whitepaper_header ol li, .whitepaper_main ol li {
+   text-align: justify;
+}
+.whitepaper_header ol li p, .whitepaper_main ol li p {
+   text-align: justify;
+}
+.timeline { 
+   color: black;
+   font-size: 1.2vw;
+   margin: 0;
+   border-style: solid;
+   border-radius: 4cap;
+   border-color: red;
+   padding: 1vw;
+   margin: 0;
+   padding-left: 2vw;
+   padding-right: 2vw;
+}
+.whitepaper_main {
+   margin-top: 1vh;
+}
+
+.whitepaper_main h3{
+   font-size: 3vw;
+}
+@media screen and (max-width: 767px) {
+   .whitepaper_header ol, .whitepaper_main ol {
+      list-style-type: none;
+      padding-inline-start: 0px;
+      /* margin-inline-start: -40px; */
+   }
+   .timeline { 
+      width: 85vw;
+      font-size: 3.5vw;
+      padding: 2vh;
+      color: red;
+   }
+   .timeLine_br {
+      display: block;
+   }
+   .whitepaper_main h3{
+      font-size: 5vh;
+   }
+   .whitepaper_main ol li em {
+      color: red;
+   }
+}
